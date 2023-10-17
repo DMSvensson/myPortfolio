@@ -1,0 +1,24 @@
+.skill {
+    display: inline-block;
+    background-color: hsl(20, 32%, 36%);
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    border-radius: 40px;
+    color: hsl(21, 55%, 93%);
+    word-break: break-all;
+}
+
+.language {
+    background-color: hsl(16, 24%, 31%);
+}
+
+.framework {
+    background-color: #F27E57;
+    color: #2e0000;
+}
+
+.other {
+    background-color: #69C7B1;
+    color: #332824;
+    /* background-color: #3E7568; */
+}

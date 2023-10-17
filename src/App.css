@@ -57,3 +57,64 @@
     gap: 50px;
     margin-top: 35px;
 }
+
+.about-section {
+    background-color: #302d2c;
+}
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.about-me {
+    text-align: justify;
+    width: 50%;
+    margin: auto 50px auto 20px;
+}
+
+.skills {
+    width: 50%;
+}
+
+.skills > article:first-of-type {
+    border-radius: 10px 10px 0 0;
+}
+
+.skills > article:last-child {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.skill-header {
+    padding: 20px 0 0px 10px;
+}
+
+.skill-tags {
+    padding: 10px 10px 25px 10px;
+}
+
+.skill-tags > span ~ span {
+    margin-left: 10px;
+}
+
+.skill-tags > span {
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+    .about {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-me {
+        width: unset;
+        margin: 0;
+    }
+
+    .skills {
+        margin-top: 50px;
+        width: 75%;
+    }
+}
