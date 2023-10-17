@@ -11,7 +11,7 @@ function ProjectCard({image, title, description, link, skills}) {
             {link && <a className={`btn ${styles.action}`} href={link} target='blank'>View Project</a>}
             <div className={styles.skills}>
                 {skills && skills.map(skill => {
-                    return <SkillTag skill={skill.skill} type={skill.type} />
+                    return <SkillTag skill={skill.skill} type={skill.type} key={skill.skill}/>
                 })}                
             </div>
         </div>
