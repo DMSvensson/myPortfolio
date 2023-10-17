@@ -18,10 +18,6 @@
     padding: 10px 10px 25px 10px;
 }
 
-.skillTags > span ~ span {
-    margin-left: 10px;
-}
-
 .skillTags > span {
     margin-top: 5px;
 }

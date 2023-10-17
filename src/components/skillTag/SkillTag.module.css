@@ -8,6 +8,10 @@
     word-break: break-all;
 }
 
+.skill ~ .skill {
+    margin-left: 10px;
+}
+
 .language {
     background-color: #B37E6D;
     color: #371313;

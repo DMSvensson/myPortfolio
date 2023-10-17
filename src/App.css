@@ -67,6 +67,41 @@
     margin: auto 50px auto 20px;
 }
 
+.experiences {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.experience {
+    width: 30%;
+}
+
+.experience ~ .experience {
+    margin-left: 30px;
+}
+
+.experience > .space-down {
+    margin-bottom: 15px;
+}
+
+.experience > .space-up {
+    margin-top: 15px;
+}
+
+.experience > h3,h4 {
+    font-weight: unset;
+}
+.experience > h3 {
+    font-size: 3rem;
+}
+
+.experience > h4 {
+    font-size: 2.2rem;
+}
+
+
 @media only screen and (max-width: 900px) {
     .about {
         flex-wrap: wrap;
