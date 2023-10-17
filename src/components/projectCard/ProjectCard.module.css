@@ -33,10 +33,6 @@
     gap: 10px
 }
 
-.skill {
-    background-color: hsl(20, 32%, 36%);
-    padding: 5px 10px;
-    font-size: 1.3rem;
-    border-radius: 40px;
-    color: hsl(21, 55%, 93%);
+.skills > span ~ span {
+    margin-left: 0 !important;
 }
