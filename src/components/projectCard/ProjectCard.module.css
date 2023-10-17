@@ -21,16 +21,14 @@
 
 .description {
     text-align: justify;
-}
-
-.action {
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 .skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px
+    gap: 10px;
+    margin-top: 20px;
 }
 
 .skills > span ~ span {
