@@ -1,0 +1,42 @@
+.project {
+    width: 300px;
+    min-width: 250px;
+}
+
+.img {
+    width: 100%;
+    height: 226px;
+    max-height: 226px;
+    border-radius: 10px;
+}
+
+.img:hover {
+    scale: 1.2;
+    transition: 0.8s;
+}
+
+.title {
+    padding: 20px 0;
+}
+
+.description {
+    text-align: justify;
+}
+
+.action {
+    margin: 20px 0;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+.skill {
+    background-color: hsl(20, 32%, 36%);
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    border-radius: 40px;
+    color: hsl(21, 55%, 93%);
+}
