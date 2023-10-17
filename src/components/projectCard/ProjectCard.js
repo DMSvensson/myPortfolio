@@ -1,5 +1,6 @@
 import React from "react";
 import styles from './ProjectCard.module.css';
+import SkillTag from "../skillTag/SkillTag";
 
 function ProjectCard({image, title, description, link, skills}) {
     return (
@@ -10,7 +11,7 @@ function ProjectCard({image, title, description, link, skills}) {
             {link && <a className={`btn ${styles.action}`} href={link} target='blank'>View Project</a>}
             <div className={styles.skills}>
                 {skills && skills.map(skill => {
-                    return <span className={styles.skill}>{skill}</span>
+                    return <SkillTag skill={skill.skill} type={skill.type} />
                 })}                
             </div>
         </div>

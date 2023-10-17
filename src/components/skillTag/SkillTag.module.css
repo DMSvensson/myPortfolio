@@ -9,7 +9,8 @@
 }
 
 .language {
-    background-color: hsl(16, 24%, 31%);
+    background-color: #B37E6D;
+    color: #371313;
 }
 
 .framework {
@@ -20,5 +21,4 @@
 .other {
     background-color: #69C7B1;
     color: #332824;
-    /* background-color: #3E7568; */
 }

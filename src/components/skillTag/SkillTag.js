@@ -2,7 +2,7 @@ import React from "react";
 import styles from './SkillTag.module.css';
 
 const getClassByType = ((type) => {
-    if(type === 'languages') {
+    if(type === 'language') {
         return styles.language;
     } else if(type === 'framework') {
         return styles.framework;
