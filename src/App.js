@@ -1,7 +1,7 @@
 import './App.css';
 import Container from './components/container/Container';
 import ProjectCard from './components/projectCard/ProjectCard';
-import SkillTag from './components/skillTag/SkillTag';
+import Skills from './components/skills/Skills';
 
 function App() {
   const publicURL = process.env.PUBLIC_URL;
@@ -64,43 +64,7 @@ function App() {
               gained a strong understanding of Angular, HTML, CSS, JavaScript, and TypeScript.</p>
             <p>In my spare time, I enjoy working on my personal projects as well as strength training and watch cycling and cycling on my road when possible.</p>
           </article>
-          <article className='skills'>
-            <h3>Skills</h3>
-            <article style={{ background: '#855E51' }}>
-              <div className='skill-header'>
-                <h4>Languages</h4>
-              </div>
-              <div className='skill-tags'>
-                <SkillTag type={'language'} skill={'C#'} />
-                <SkillTag type={'language'} skill={'HTML, CSS'} />
-                <SkillTag type={'language'} skill={'Java'} />
-                <SkillTag type={'language'} skill={'Javascript'} />
-                <SkillTag type={'language'} skill={'Typescript'} />
-              </div>
-            </article>
-            <article style={{ background: '#C46647' }}>
-              <div className='skill-header'>
-                <h4>Frameworks</h4>
-              </div>
-              <div className='skill-tags'>
-                <SkillTag type={'framework'} skill={'Angular'} />
-                <SkillTag type={'framework'} skill={'React'} />
-                <SkillTag type={'framework'} skill={'Ionic'} />
-              </div>
-            </article>
-            <article style={{ background: '#519A89' }}>
-              <div className='skill-header'>
-                <h4>Other</h4>
-              </div>
-              <div className='skill-tags'>
-                <SkillTag type={'other'} skill={'Git'} />
-                <SkillTag type={'other'} skill={'Firebase'} />
-                <SkillTag type={'other'} skill={'Figma'} />
-                <SkillTag type={'other'} skill={'Sanity'} />
-                <SkillTag type={'other'} skill={'UWP'} />
-              </div>
-            </article>
-          </article>
+          <Skills />
         </div>
       </Container>
     </div>

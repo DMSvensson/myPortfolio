@@ -1,0 +1,27 @@
+.skills {
+    width: 50%;
+}
+
+.skills > article:first-of-type {
+    border-radius: 10px 10px 0 0;
+}
+
+.skills > article:last-child {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.skillHeader {
+    padding: 20px 0 0px 10px;
+}
+
+.skillTags {
+    padding: 10px 10px 25px 10px;
+}
+
+.skillTags > span ~ span {
+    margin-left: 10px;
+}
+
+.skillTags > span {
+    margin-top: 5px;
+}
