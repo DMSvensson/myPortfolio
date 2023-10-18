@@ -9,12 +9,12 @@ function App() {
   const experiences = [
     {
       company: 'Syncorder', job: 'Frontend Developer', timePlace: '2018 - 2020 | Copenhagen',
-      description: 'I was a trainne as a programmer which was a part of my EUX education. I developed the frontend for the platform the customer was using.',
+      description: 'My last role as a trainee. I actively participated in the development of the frontend for a platform that was utilized by our customer. This experience allowed me gaining hands-on experience and gain valuable expertise in frontend development.',
       skills: [{ skill: 'Angular', type: 'framework' }, { skill: 'Typescript', type: 'language' }, { skill: 'HTML, CSS', type: 'language' }, { skill: 'Git', type: 'other' }]
     },
     {
       company: 'Klestrup & Partners', job: 'Developer', timePlace: '2015 - 2016 | Copenhagen',
-      description: 'I was a trainne as a programmer which was a part of my EUX education. I worked on small tasks with C#.',
+      description: 'As part of my EUX education, I was on a trainee position as a programmer. I worked on small tasks with C#.',
       skills: [{ skill: 'C#', type: 'language' }, { skill: 'Git', type: 'other' }]
     },
     {
@@ -30,46 +30,46 @@ function App() {
       </div>
       <div className='landing'>
         <h1 className='title'>Hi &#128075; I'm Daniel Svensson</h1>
-        <p>Welcome to my developer portfolio, where I showcase my expertise in frontend development &#128187;. With a passion for creating visually stunning and user-friendly websites I strive to deliver high-quality projects that exceed expectations</p>
+        <p>Welcome to my developer portfolio, where I showcase my expertise in frontend development &#128187;. I'm passionate about creating visually stunning and user-friendly websites I strive to deliver high-quality projects that exceed expectations</p>
         <a className='btn' href='#projects'>View Projects</a>
       </div>
       <Container id={'projects'} title={'Projects'}>
         <div className='projects'>
           <ProjectCard image={`${publicURL}/images/TDFOverview.png`}
             title={'Tour de France overview'}
-            description={`This is one of my newest project. The project is about seeing previous Tour de France results. 
-                          The idea is that the user can scroll through every stage to see who got different key points and who won the stage. 
-                          After every stage, there is an overview of who is in yellow, green, and so on`}
+            description={`This is one of my most recent projects and it focuses on presenting the historical results of the Tour de France. 
+                          The main concept behind this project is to enable to seamlessly navigate through each stage, allowing them to view the key points, stage, winners, and other vital information. 
+                          At the end of each stage, there's a overview of the current leaders in categories such as the yellow jersey, green jersey, and more`}
             link={'https://dmsvensson.github.io/grandTours/'}
             skills={[{ skill: 'React', type: 'framework' }, { skill: 'Javascript', type: 'language' }, { skill: 'HTML, CSS', type: 'language' }]}
             key={'TDF'} />
           <ProjectCard image={`${publicURL}/images/treeman.png`}
             title={'Træmanden'}
-            description={`I have designed and create a more modern version of Træmanden.dk`}
+            description={`I have designed and developed a more modern version of Træmanden.dk`}
             link={'https://treeman-644ca.web.app/'}
             skills={[{ skill: 'Angular', type: 'framework' }, { skill: 'Typescript', type: 'language' }, { skill: 'HTML, CSS', type: 'language' }, { skill: 'Figma', type: 'other' }, { skill: 'Sanity', type: 'other' }]}
             key={'treeman'} />
           <ProjectCard image={`${publicURL}/images/ginWebsite.png`}
             title={'Gin Tasting'}
-            description={`I held a gin tasting at my university, where a fellow student and I created a website for this event.
-                          The other students could go on the website to rate the gin in order to find the best gin.
-                          To see an event use code: 7765`}
+            description={`I organized a gin tasting at my university, during which a fellow student and I designed and developed a dedicated website for this.
+                          This allowed other students to rate various gins, ultimately determining the best one.
+                          To access a specific event, you can use the event code: 7765`}
             link={'https://gin-tasting.web.app/'}
             skills={[{ skill: 'Angular', type: 'framework' }, { skill: 'Typescript', type: 'language' }, { skill: 'Firebase', type: 'other' }]}
             key={'Gin'} />
           <ProjectCard image={`${publicURL}/images/myFitLog.png`}
             title={'MyFitLog'}
-            description={`MyFitLog is a website for tracking strength training. Demo user email: test@test.com password: 123456`}
+            description={`MyFitLog is a website designed for tracking your strength training progress. If you'd like to explore the demo, you can use the following login. Demo user email: test@test.com password: 123456`}
             skills={[{ skill: 'Angular', type: 'framework' }, { skill: 'Typescript', type: 'language' }, { skill: 'HTML, CSS', type: 'language' }, { skill: 'Firebase', type: 'other' }]}
             key={'MyFitLog'} />
           <ProjectCard image={'https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80'}
             title={'Smart Mirror'}
-            description={`I created a smart mirror and an app. The idea is that my family can have useful information shown on the smart mirror.`}
+            description={`I created a smart mirror and an app with the purpose of providing my family with valuable, real-time infomation on the smart mirror.`}
             skills={[{ skill: 'Ionic', type: 'framework' }, { skill: 'Firebase', type: 'other' }]}
             key={'smartMirror'} />
           <ProjectCard image={'https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80'}
             title={'TilbudsChecker'}
-            description={`One of my first app. The idea is that you can take an URL of a product and add it to the app. The app will then check after discount on the products once a day.`}
+            description={`One of my earliest projects was an app allowas users to input a product's URL. The app then automatically checks for any discounts on the product once a day, ensuring that you never miss out on a great deal.`}
             skills={[{ skill: 'C#', type: 'language' }, { skill: 'UWP', type: 'other' }]}
             key={'Tilbud'} />
         </div>
@@ -80,7 +80,7 @@ function App() {
             <p>My journey as a developer spans over the last 9 years, during which I have primarily focused on
               building my skills in frontend development. Through my previous work and personal projects, I have
               gained a strong understanding of Angular, HTML, CSS, JavaScript, and TypeScript.</p>
-            <p>In my spare time, I enjoy working on my personal projects as well as strength training and watch cycling and cycling on my road when possible.</p>
+            <p>I enjoy working on my personal projects but when I'm not coding you'll likely find my hitting the gym or simply chilling out while watching sports. And when the weather's right, I'll be out riding my road bike.</p>
           </article>
           <Skills />
         </div>
