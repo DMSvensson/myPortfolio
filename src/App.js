@@ -93,8 +93,8 @@ function App() {
                 <h3 className='space-down'>{experience.company}</h3>
                 <h4>{experience.job}</h4>
                 <p>{experience.timePlace}</p>
-                <p className='space-up space-down'>{experience.description}</p>
-                <div>
+                <p className='space-up'>{experience.description}</p>
+                <div className='skills'>
                   {experience.skills && experience.skills.map(skill => {
                     return <SkillTag skill={skill.skill} type={skill.type} key={skill.skill} />
                   })}
