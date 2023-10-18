@@ -30,13 +30,13 @@ function Skills() {
             <h3>Skills</h3>
             {allSkills.map(skill => {
                 return (
-                    <article style={{ background: skill.backgroundColor }}>
+                    <article style={{ background: skill.backgroundColor }} key={skill.title}>
                         <div className={styles.skillHeader}>
                             <h4>{skill.title}</h4>
                         </div>
                         <div className={styles.skillTags}>
                             {skill.skills.map(skill => {
-                                return <SkillTag type={skill.type} skill={skill.skill} />
+                                return <SkillTag type={skill.type} skill={skill.skill} key={skill.skill} />
                             })}
                         </div>
                     </article>
