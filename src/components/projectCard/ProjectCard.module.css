@@ -1,6 +1,11 @@
 .project {
     width: 300px;
     min-width: 250px;
+    opacity: 0;
+}
+
+.project.visible {
+    animation: fadeIn 1s ease-in both;
 }
 
 .img {
@@ -33,4 +38,15 @@
 
 .skills > span ~ span {
     margin-left: 0 !important;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 0%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
 }
