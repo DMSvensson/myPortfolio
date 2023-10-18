@@ -10,12 +10,12 @@ function App() {
     {
       company: 'Syncorder', job: 'Frontend Developer', timePlace: '2018 - 2020 | Copenhagen',
       description: 'I was a trainne as a programmer which was a part of my EUX education. I developed the frontend for the platform the customer was using.',
-      skills: [{ skill: 'Angular', type: 'framework' }, { skill: 'Typescript', type: 'language' }, { skill: 'HTML, CSS', type: 'language' }]
+      skills: [{ skill: 'Angular', type: 'framework' }, { skill: 'Typescript', type: 'language' }, { skill: 'HTML, CSS', type: 'language' }, { skill: 'Git', type: 'other' }]
     },
     {
       company: 'Klestrup & Partners', job: 'Developer', timePlace: '2015 - 2016 | Copenhagen',
       description: 'I was a trainne as a programmer which was a part of my EUX education. I worked on small tasks with C#.',
-      skills: [{ skill: 'C#', type: 'language' }]
+      skills: [{ skill: 'C#', type: 'language' }, { skill: 'Git', type: 'other' }]
     },
     {
       company: 'Computer Assistance Ltd', job: 'Helper', timePlace: '2014 - 2014 | Oxfordshire',
