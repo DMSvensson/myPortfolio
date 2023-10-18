@@ -96,12 +96,98 @@ function App() {
                 <p className='space-up space-down'>{experience.description}</p>
                 <div>
                   {experience.skills && experience.skills.map(skill => {
-                      return <SkillTag skill={skill.skill} type={skill.type} key={skill.skill} />
+                    return <SkillTag skill={skill.skill} type={skill.type} key={skill.skill} />
                   })}
                 </div>
               </div>
             );
           })}
+        </div>
+      </Container>
+      <Container id={'education'} title={'Education'}>
+        <div className='educations'>
+          <div className='middle-line'>
+            <div className='year box'>2013 
+              <span className='right education'>Language School, EF, Oxford</span>
+            </div>
+            <div className='year box'>2014
+              <span className='left education'>Computer Technicain Specializing in Programming, EUX, TEC</span>
+            </div>
+            <div className='year box'>2020
+              <span className='right education'>Bachelor Degree in IT Product Development, Aarhus University</span>
+            </div>
+            <div className='semester box'>
+              1
+              <ul className='right-short education'>
+                <li>Indroduction to Programming </li>
+                <hr />
+                <li>Foundations of IT Product Design</li>
+                <hr />
+                <li>Calculus Alpha</li>
+                <hr />
+              </ul>
+            </div>
+            <div className='semester box'>
+              2
+              <ul className='left-short education'>
+                <li>The Web of Things</li>
+                <hr />
+                <li>Database Systems</li>
+                <hr />
+                <li>IT Product Design Project</li>
+                <hr />
+              </ul>
+            </div>
+            <div className='semester box'>
+              3
+              <ul className='right-short education'>
+                <li>Software Engineering & Architecture</li>
+                <hr />
+                <li>Physical Computing</li>
+                <hr />
+                <li>Human-Computer Interaction</li>
+                <hr />
+              </ul>
+            </div>
+            <div className='semester box'>
+              4
+              <ul className='left-short education'>
+                <li>Computer Architecture, Networks and Operating Systems</li>
+                <hr />
+                <li>Experimental System Development</li>
+                <hr />
+                <li>Indroductory Statistics and Data Analysis using R</li>
+                <hr />
+                <li>Organising and Business Models</li>
+                <hr />
+              </ul>
+            </div>
+            <div className='semester box'>
+              5
+              <ul className='right-short education'>
+                <li>Distributed Systems and Security</li>
+                <hr />
+                <li>Algorithms and Data Structures</li>
+                <hr />
+                <li>Design as Products, Services, Systems and Experiences</li>
+                <hr />
+              </ul>
+            </div>
+            <div className='semester box'>
+              6
+              <ul className='left-short education'>
+                <li>Bachelor's Project</li>
+                <hr />
+                <li>Shape-Changing Objects and Spaces</li>
+                <hr />
+                <li>Philosophy and Ethics of Computer Science and IT Product Development</li>
+                <hr />
+              </ul>
+            </div>
+            <div className='year box'>2023
+              <span className='left education'>Finished my Bachelor Degree</span>
+            </div>
+          </div>
         </div>
       </Container>
     </div>

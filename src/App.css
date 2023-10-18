@@ -101,6 +101,89 @@
     font-size: 2.2rem;
 }
 
+.educations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.middle-line {
+    position: relative;
+    width: 5px;
+    background-color: #393636ff;
+    height: max-content;
+}
+
+.box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    background-color: #393636ff;
+    color: #EBCCBB;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.year {
+    font-size: 2.5rem;
+    padding: 15px;
+    left: -40px;
+}
+
+.education {
+    position: absolute;
+    width: max-content;
+}
+
+.semester {
+    font-size: 2.2rem;
+    padding: 10px 15px;
+    left: -18.5px;
+    margin-bottom: 75px;
+}
+
+.semester > .education {
+    line-height: 2;
+    list-style: none;
+}
+
+.left {
+    right: var(--offset-100);
+}
+
+.left-short {
+    right: var(--offset-55);
+    text-align: right;
+}
+
+.right {
+    left: var(--offset-100);
+}
+
+.right-short {
+    left: var(--offset-55);
+}
+
+
+@media screen and (max-width: 1190px) {
+    .educations {
+        align-items: baseline;
+    }
+
+    .left {
+        left: var(--offset-100);
+    }
+    .left-short {
+        left: var(--offset-55);
+        text-align: left;
+    }
+
+    .semester {
+        margin-bottom: 100px;
+    }
+    
+}
 
 @media only screen and (max-width: 900px) {
     .about {
@@ -116,5 +199,16 @@
     .skills {
         margin-top: 50px;
         width: 75%;
+    }
+
+    .education {
+        width: 205px;
+    }
+    .semester {
+        margin-bottom: 320px;
+    }
+
+    .year:nth-child(3) {
+        margin-bottom: 100px;
     }
 }
