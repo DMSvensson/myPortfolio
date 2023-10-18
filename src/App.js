@@ -51,7 +51,7 @@ function App() {
             key={'treeman'} />
           <ProjectCard image={`${publicURL}/images/ginWebsite.png`}
             title={'Gin Tasting'}
-            description={`I organized a gin tasting at my university, during which a fellow student and I designed and developed a dedicated website for this.
+            description={`I organized a gin tasting at my university. A fellow student and I designed and developed a dedicated website for this.
                           This allowed other students to rate various gins, ultimately determining the best one.
                           To access a specific event, you can use the event code: 7765`}
             link={'https://gin-tasting.web.app/'}
@@ -59,8 +59,9 @@ function App() {
             key={'Gin'} />
           <ProjectCard image={`${publicURL}/images/myFitLog.png`}
             title={'MyFitLog'}
-            description={`MyFitLog is a website designed for tracking your strength training progress. If you'd like to explore the demo, you can use the following login. Demo user email: test@test.com password: 123456`}
+            description={`MyFitLog is a website designed for tracking your strength training progress. If you'd like to explore the demo, you can use the following login. Demo user email: test@test.com password: Demo$Test1234`}
             skills={[{ skill: 'Angular', type: 'framework' }, { skill: 'Typescript', type: 'language' }, { skill: 'HTML, CSS', type: 'language' }, { skill: 'Firebase', type: 'other' }]}
+            link={'https://myfitlog-d6729.web.app/home'}
             key={'MyFitLog'} />
           <ProjectCard image={'https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80'}
             title={'Smart Mirror'}
