@@ -100,6 +100,12 @@ button, .btn {
   cursor: pointer;
 }
 
+.btn.outline {
+  border: 1px hsl(20, 32%, 66%) solid;
+  background-color: #464342;
+  color: #ebccbb;
+}
+
 button:hover, .btn:hover {
   background-color: hsl(21, 32%, 56%);
   transform: scale(1.03);

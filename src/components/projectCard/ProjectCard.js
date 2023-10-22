@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import styles from './ProjectCard.module.css';
 import SkillTag from "../skillTag/SkillTag";
 
-function ProjectCard({ image, title, description, link, skills }) {
+function ProjectCard({ image, title, description, link, skills, demoUser }) {
     const ref = useRef(null);
     useEffect(() => {
         const element = ref.current;
@@ -15,7 +15,7 @@ function ProjectCard({ image, title, description, link, skills }) {
                     }
                 });
             }, {
-                threshold: 0.5
+                threshold: 0.2
             }
         );
 
@@ -32,10 +32,14 @@ function ProjectCard({ image, title, description, link, skills }) {
     
     return (
         <div className={styles.project} ref={ref}>
-            <img className={styles.img} src={image} alt="project website" />
+            <a href={link} target="blank"><img className={styles.img} src={image} alt="project website" /></a>
             <h4 className={styles.title}>{title}</h4>
-            <p className={styles.description}>{description}</p>
             {link && <a className={`btn ${styles.action}`} href={link} target='blank'>View Project</a>}
+            <p className={styles.description}>{description}</p>
+            {demoUser && <div>
+                <p>{demoUser.email}</p>
+                <p>{demoUser.password}</p>
+                </div>}
             <div className={styles.skills}>
                 {skills && skills.map(skill => {
                     return <SkillTag skill={skill.skill} type={skill.type} key={skill.skill} />

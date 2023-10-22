@@ -9,17 +9,17 @@ function App() {
   const experiences = [
     {
       company: 'Syncorder', job: 'Frontend Developer', timePlace: '2018 - 2020 | Copenhagen',
-      description: 'My last role as a trainee. I actively participated in the development of the frontend for a platform that was utilized by our customer. This experience allowed me gaining hands-on experience and gain valuable expertise in frontend development.',
+      description: 'My most recent role was as a trainee at Syncorder. I actively participated in the development of the frontend for a platform that our customers used to streamline their procurement processes. This experience allowed me to gain hands-on experience and valuable expertise in frontend development.',
       skills: [{ skill: 'Angular', type: 'framework' }, { skill: 'Typescript', type: 'language' }, { skill: 'HTML, CSS', type: 'language' }, { skill: 'Git', type: 'other' }]
     },
     {
       company: 'Klestrup & Partners', job: 'Developer', timePlace: '2015 - 2016 | Copenhagen',
-      description: 'As part of my EUX education, I was on a trainee position as a programmer. I worked on small tasks with C#.',
+      description: 'As part of my EUX education, I had a trainee position as a programmer. I worked on small tasks with C#.',
       skills: [{ skill: 'C#', type: 'language' }, { skill: 'Git', type: 'other' }]
     },
     {
-      company: 'Computer Assistance Ltd', job: 'Helper', timePlace: '2014 - 2014 | Oxfordshire',
-      description: 'I was a voluntier worker. Helped with computers repairs and installing for software.'
+      company: 'Computer Assistance Ltd', job: 'Helper', timePlace: '2014 | Oxfordshire',
+      description: 'I was a voluntier helping with computer repairs and installing software.'
     },
   ]
 
@@ -30,16 +30,30 @@ function App() {
       </div>
       <div className='landing'>
         <h1 className='title'>Hi &#128075; I'm Daniel Svensson</h1>
-        <p>Welcome to my developer portfolio, where I showcase my expertise in frontend development &#128187;. I'm passionate about creating visually stunning and user-friendly websites I strive to deliver high-quality projects that exceed expectations</p>
-        <a className='btn' href='#projects'>View Projects</a>
+        <p>Welcome to my developer portfolio, where I showcase my expertise in frontend development &#128187;. I'm passionate about creating visually stunning and user-friendly websites, and I strive to deliver high-quality projects that exceed expectations</p>
+        <div className='actions'>
+          <a className='btn' href='#projects'>View Projects</a>
+          <a className='btn outline' href='#experience'>Experience</a>
+        </div>
       </div>
+      <Container id={'about'} title={'About Me'} backgroundColor={'#302d2c'}>
+        <div className='about'>
+          <article className='about-me'>
+            <p>My journey as a developer spans over the last 9 years, during which I have primarily focused on
+              building my skills in frontend development. Through my previous work and personal projects, I have
+              gained a strong understanding of Angular, HTML, CSS, JavaScript and TypeScript.</p>
+            <p>I enjoy working on my personal projects but when I'm not coding you'll likely find me hitting the gym or simply chilling out while watching sports. And when the weather's right, I'll be out riding my road bike.</p>
+          </article>
+          <Skills />
+        </div>
+      </Container>
       <Container id={'projects'} title={'Projects'}>
         <div className='projects'>
           <ProjectCard image={`${publicURL}/images/TDFOverview.png`}
-            title={'Tour de France overview'}
+            title={'Tour de France Overview'}
             description={`This is one of my most recent projects and it focuses on presenting the historical results of the Tour de France. 
                           The main concept behind this project is to enable to seamlessly navigate through each stage, allowing them to view the key points, stage, winners, and other vital information. 
-                          At the end of each stage, there's a overview of the current leaders in categories such as the yellow jersey, green jersey, and more`}
+                          At the end of each stage, there's an overview of the current leaders in categories such as the yellow jersey, green jersey, and more`}
             link={'https://dmsvensson.github.io/grandTours/'}
             skills={[{ skill: 'React', type: 'framework' }, { skill: 'Javascript', type: 'language' }, { skill: 'HTML, CSS', type: 'language' }]}
             key={'TDF'} />
@@ -59,7 +73,8 @@ function App() {
             key={'Gin'} />
           <ProjectCard image={`${publicURL}/images/myFitLog.png`}
             title={'MyFitLog'}
-            description={`MyFitLog is a website designed for tracking your strength training progress. If you'd like to explore the demo, you can use the following login. Demo user email: test@test.com password: Demo$Test1234`}
+            description={`MyFitLog is a website designed for tracking your strength training progress. If you'd like to explore the demo, you can use the following login:`}
+            demoUser={{email: 'Email: test@test.com', password: 'Password: Demo$Test1234'}}
             skills={[{ skill: 'Angular', type: 'framework' }, { skill: 'Typescript', type: 'language' }, { skill: 'HTML, CSS', type: 'language' }, { skill: 'Firebase', type: 'other' }]}
             link={'https://myfitlog-d6729.web.app/home'}
             key={'MyFitLog'} />
@@ -70,23 +85,12 @@ function App() {
             key={'smartMirror'} />
           <ProjectCard image={'https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80'}
             title={'TilbudsChecker'}
-            description={`One of my earliest projects was an app allowas users to input a product's URL. The app then automatically checks for any discounts on the product once a day, ensuring that you never miss out on a great deal.`}
+            description={`One of my earliest projects was an app which allows users to input a product's URL. The app then automatically checks for any discounts on the product once a day, ensuring that you never miss out on a great deal.`}
             skills={[{ skill: 'C#', type: 'language' }, { skill: 'UWP', type: 'other' }]}
             key={'Tilbud'} />
         </div>
       </Container>
-      <Container id={'about'} title={'About Me'} backgroundColor={'#302d2c'}>
-        <div className='about'>
-          <article className='about-me'>
-            <p>My journey as a developer spans over the last 9 years, during which I have primarily focused on
-              building my skills in frontend development. Through my previous work and personal projects, I have
-              gained a strong understanding of Angular, HTML, CSS, JavaScript, and TypeScript.</p>
-            <p>I enjoy working on my personal projects but when I'm not coding you'll likely find my hitting the gym or simply chilling out while watching sports. And when the weather's right, I'll be out riding my road bike.</p>
-          </article>
-          <Skills />
-        </div>
-      </Container>
-      <Container id={'experience'} title={'Experience'}>
+      <Container id={'experience'} title={'Experience'} backgroundColor={'#302d2c'}>
         <div className='experiences'>
           {experiences.map(experience => {
             return (
