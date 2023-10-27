@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './Skills.module.css';
 import SkillTag from "../skillTag/SkillTag";
+import { getSkillClassByType } from "../../utility/getStyles";
 
 function Skills() {
     const skills = [
@@ -20,9 +21,9 @@ function Skills() {
     ];
 
     const allSkills = [
-        { title: 'Languages', backgroundColor: '#855E51', skills: skills.filter(skill => skill.type === 'language') },
-        { title: 'Framework', backgroundColor: '#C46647', skills: skills.filter(skill => skill.type === 'framework') },
-        { title: 'Other', backgroundColor: '#519A89', skills: skills.filter(skill => skill.type === 'other') },
+        { title: 'Languages', type: 'language', skills: skills.filter(skill => skill.type === 'language') },
+        { title: 'Framework', type: 'framework', skills: skills.filter(skill => skill.type === 'framework') },
+        { title: 'Other', type: 'other', skills: skills.filter(skill => skill.type === 'other') },
     ];
 
     return (
@@ -30,7 +31,7 @@ function Skills() {
             <h3>Skills</h3>
             {allSkills.map(skill => {
                 return (
-                    <article style={{ background: skill.backgroundColor }} key={skill.title}>
+                    <article className={`${styles.skill} ${getSkillClassByType(skill.type)}`} key={skill.title}>
                         <div className={styles.skillHeader}>
                             <h4>{skill.title}</h4>
                         </div>

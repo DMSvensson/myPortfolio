@@ -1,5 +1,5 @@
 .background-color {
-    background-color: #464342;
+    background-color: var(--background-color);
 }
 
 .background {
@@ -17,7 +17,7 @@
 .background > div {
     position: absolute;
     inset: 0;
-    background-color: #464342cc;
+    background-color: hsla(var(--bg-hsl), 0.8);
 }
 
 .landing {
@@ -49,10 +49,6 @@
     justify-content: center;
     gap: 50px;
     margin-top: 35px;
-}
-
-.about-section {
-    background-color: #302d2c;
 }
 
 .about {
@@ -113,9 +109,10 @@
 }
 
 .middle-line {
+    --eduction-bg: #393636ff;
     position: relative;
     width: 5px;
-    background-color: #393636ff;
+    background-color: var(--eduction-bg);
     height: max-content;
 }
 
@@ -124,8 +121,8 @@
     display: flex;
     align-items: center;
     width: fit-content;
-    background-color: #393636ff;
-    color: #EBCCBB;
+    background-color: var(--eduction-bg);
+    color: var(--headline-color);
     border-radius: 15px;
     margin-bottom: 50px;
 }

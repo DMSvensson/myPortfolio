@@ -12,6 +12,21 @@
 }
 
 :root {
+  --headline-color: #ebccbb;
+  --text-color: #c9c2c0;
+  --bg-hsl: 15, 3%, 27%;
+  --background-color: hsl(var(--bg-hsl));
+
+  --skill-language: #855E51;
+  --skill-framework: #C46647;
+  --skill-other: #519A89;
+  --skill-tag-language-bg: #B37E6D;
+  --skill-tag-language-text: #371313;
+  --skill-tag-framework-bg: #F27E57;
+  --skill-tag-framework-text: #2e0000;
+  --skill-tag-other-bg: #69C7B1;
+  --skill-tag-other-text: #332824;
+
   --offset-100: 100px;
   --offset-55: 55px;
 }
@@ -53,7 +68,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: #ebccbb;
+  color: var(--headline-color);
 }
 
 p,
@@ -66,7 +81,7 @@ li,
 td,
 label,
 textarea {
-  color: #c9c2c0;
+  color: var(--text-color);
   font-size: 1.8rem;
 }
 
@@ -102,8 +117,8 @@ button, .btn {
 
 .btn.outline {
   border: 1px hsl(20, 32%, 66%) solid;
-  background-color: #464342;
-  color: #ebccbb;
+  background-color: var(--background-color);
+  color: var(--headline-color);
 }
 
 button:hover, .btn:hover {

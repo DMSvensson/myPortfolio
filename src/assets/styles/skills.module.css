@@ -1,0 +1,17 @@
+.language {
+    --skill-bg: var(--skill-language);
+    --skill-tag-bg: var(--skill-tag-language-bg);
+    --skill-tag-text: var(--skill-tag-language-text);
+}
+
+.framework {
+    --skill-bg: var(--skill-framework);
+    --skill-tag-bg: var(--skill-tag-framework-bg);
+    --skill-tag-text: var(--skill-tag-framework-text);
+}
+
+.other {
+    --skill-bg: var(--skill-other);
+    --skill-tag-bg: var(--skill-tag-other-bg);
+    --skill-tag-text: var(--skill-tag-other-text);
+}
