@@ -3,8 +3,22 @@ import Container from './components/container/Container';
 import ProjectCard from './components/projectCard/ProjectCard';
 import SkillTag from './components/skillTag/SkillTag';
 import Skills from './components/skills/Skills';
+import Modal from './components/modal/Modal';
+import { useState } from 'react';
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImgSrc, setModalImgSrc] = useState("");
+
+  const openModal = (event) => {
+    setModalImgSrc(event.target.src);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   const publicURL = process.env.PUBLIC_URL;
   const experiences = [
     {
@@ -123,7 +137,7 @@ function App() {
             </div>
             <div className='semester box'>
               1
-              <ul className='right-short education'>
+              <ul className='right education'>
                 <li>Indroduction to Programming </li>
                 <hr />
                 <li>Foundations of IT Product Design</li>
@@ -134,7 +148,7 @@ function App() {
             </div>
             <div className='semester box'>
               2
-              <ul className='left-short education'>
+              <ul className='left education'>
                 <li>The Web of Things</li>
                 <hr />
                 <li>Database Systems</li>
@@ -145,7 +159,7 @@ function App() {
             </div>
             <div className='semester box'>
               3
-              <ul className='right-short education'>
+              <ul className='right education'>
                 <li>Software Engineering & Architecture</li>
                 <hr />
                 <li>Physical Computing</li>
@@ -156,7 +170,7 @@ function App() {
             </div>
             <div className='semester box'>
               4
-              <ul className='left-short education'>
+              <ul className='left education'>
                 <li>Computer Architecture, Networks and Operating Systems</li>
                 <hr />
                 <li>Experimental System Development</li>
@@ -169,7 +183,7 @@ function App() {
             </div>
             <div className='semester box'>
               5
-              <ul className='right-short education'>
+              <ul className='right education'>
                 <li>Distributed Systems and Security</li>
                 <hr />
                 <li>Algorithms and Data Structures</li>
@@ -180,7 +194,7 @@ function App() {
             </div>
             <div className='semester box'>
               6
-              <ul className='left-short education'>
+              <ul className='left education'>
                 <li>Bachelor's Project</li>
                 <hr />
                 <li>Shape-Changing Objects and Spaces</li>
@@ -192,9 +206,13 @@ function App() {
             <div className='year box'>2023
               <span className='left education'>Finished my Bachelor Degree</span>
             </div>
+            <div className='cert box'>Cert.
+              <span className='right education'>Web Development, Codecademy <img onClick={openModal} src={`${publicURL}/images/WD_Certificate_Codecademy.png`} alt='Certificate'/> </span>
+            </div>
           </div>
         </div>
       </Container>
+      <Modal isOpen={isModalOpen} onClose={closeModal} imageSrc={modalImgSrc} />
     </div>
   );
 }
