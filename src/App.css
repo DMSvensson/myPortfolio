@@ -125,24 +125,30 @@
     color: var(--headline-color);
     border-radius: 15px;
     margin-bottom: 50px;
+    padding: 15px;
+}
+
+.box.cert {
+    --offset: 80px;
+    left: -31px;
 }
 
 .year {
+    --offset: 100px;
     font-size: 2.5rem;
-    padding: 15px;
     left: -40px;
 }
 
-.education {
-    position: absolute;
-    width: max-content;
-}
-
 .semester {
+    --offset: 55px;
     font-size: 2.2rem;
     padding: 10px 15px;
     left: -18.5px;
     margin-bottom: 75px;
+}
+
+.semester:has(.left) {
+    text-align: right;
 }
 
 .semester > .education {
@@ -150,23 +156,29 @@
     list-style: none;
 }
 
-.left {
-    right: var(--offset-100);
+.education {
+    position: absolute;
+    width: max-content;
 }
 
-.left-short {
-    right: var(--offset-55);
-    text-align: right;
+.education:has(img) {
+    display: flex;
+    align-items: center;
+}
+
+.education > img {
+    width: 18rem;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.left {
+    right: var(--offset);
 }
 
 .right {
-    left: var(--offset-100);
+    left: var(--offset);
 }
-
-.right-short {
-    left: var(--offset-55);
-}
-
 
 @media screen and (max-width: 1190px) {
     .educations {
@@ -174,10 +186,7 @@
     }
 
     .left {
-        left: var(--offset-100);
-    }
-    .left-short {
-        left: var(--offset-55);
+        left: var(--offset);
         text-align: left;
     }
 
