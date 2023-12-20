@@ -56,7 +56,7 @@ function App() {
             <p>My journey as a developer spans over the last 9 years, during which I have primarily focused on
               building my skills in frontend development. Through my previous work and personal projects, I have
               gained a strong understanding of Angular, HTML, CSS, JavaScript and TypeScript.</p>
-            <p>I enjoy working on my personal projects but when I'm not coding you'll likely find me hitting the gym or simply chilling out while watching sports. And when the weather's right, I'll be out riding my road bike.</p>
+            <p>I enjoy working on my personal projects, but when I'm not coding you'll likely find me hitting the gym or simply chilling out while watching sports. And when the weather's right, I'll be out riding my road bike.</p>
           </article>
           <Skills />
         </div>
@@ -133,7 +133,7 @@ function App() {
               <span className='left education'>Computer Technicain Specializing in Programming, EUX, TEC</span>
             </div>
             <div className='year box'>2020
-              <span className='right education'>Bachelor Degree in IT Product Development, Aarhus University</span>
+              <span className='right education'>Started my Bachelor Degree in IT Product Development, Aarhus University</span>
             </div>
             <div className='semester box'>
               1
