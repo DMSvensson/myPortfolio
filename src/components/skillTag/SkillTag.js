@@ -1,9 +1,11 @@
 import React from "react";
 import styles from './SkillTag.module.css';
 import { getSkillClassByType } from "../../utility/getStyles";
+import { getSkillTag } from "../../utility/skills";
 
-function SkillTag({skill, type}) {
-    return <span className={`${styles.skill} ${getSkillClassByType(type)}`}>{skill}</span>
+function SkillTag({skill}) {
+    const skillTest = getSkillTag(skill);
+    return <span className={`${styles.skill} ${getSkillClassByType(skillTest.type)}`}>{skillTest.skill}</span>
 }
 
 export default SkillTag;

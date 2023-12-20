@@ -42,7 +42,7 @@ function ProjectCard({ image, title, description, link, skills, demoUser }) {
                 </div>}
             <div className={styles.skills}>
                 {skills && skills.map(skill => {
-                    return <SkillTag skill={skill.skill} type={skill.type} key={skill.skill} />
+                    return <SkillTag skill={skill} key={skill} />
                 })}
             </div>
         </div>
