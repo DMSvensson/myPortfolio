@@ -2,34 +2,13 @@ import React from "react";
 import styles from './Skills.module.css';
 import SkillTag from "../skillTag/SkillTag";
 import { getSkillClassByType } from "../../utility/getStyles";
+import { getAllSkills } from "../../utility/skills";
 
 function Skills() {
-    const skills = [
-        { skill: 'Javascript', type: 'language' }, 
-        { skill: 'Typescript', type: 'language' }, 
-        { skill: 'HTML, CSS', type: 'language' },
-        { skill: 'Java', type: 'language'},
-        { skill: 'C#', type: 'language' }, 
-        { skill: 'Angular', type: 'framework' }, 
-        { skill: 'React', type: 'framework' }, 
-        { skill: 'Ionic', type: 'framework' },
-        { skill: 'Git', type: 'other'},
-        { skill: 'Firebase', type: 'other' },
-        { skill: 'Figma', type: 'other' }, 
-        { skill: 'Sanity', type: 'other' },
-        { skill: 'UWP', type: 'other' },
-    ];
-
-    const allSkills = [
-        { title: 'Languages', type: 'language', skills: skills.filter(skill => skill.type === 'language') },
-        { title: 'Framework', type: 'framework', skills: skills.filter(skill => skill.type === 'framework') },
-        { title: 'Other', type: 'other', skills: skills.filter(skill => skill.type === 'other') },
-    ];
-
     return (
         <article className={styles.skills}>
             <h3>Skills</h3>
-            {allSkills.map(skill => {
+            {getAllSkills().map(skill => {
                 return (
                     <article className={`${styles.skill} ${getSkillClassByType(skill.type)}`} key={skill.title}>
                         <div className={styles.skillHeader}>

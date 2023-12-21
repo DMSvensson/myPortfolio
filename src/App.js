@@ -24,12 +24,12 @@ function App() {
     {
       company: 'Syncorder', job: 'Frontend Developer', timePlace: '2018 - 2020 | Copenhagen',
       description: 'My most recent role was as a trainee at Syncorder. I actively participated in the development of the frontend for a platform that our customers used to streamline their procurement processes. This experience allowed me to gain hands-on experience and valuable expertise in frontend development.',
-      skills: [{ skill: 'Angular', type: 'framework' }, { skill: 'Typescript', type: 'language' }, { skill: 'HTML, CSS', type: 'language' }, { skill: 'Git', type: 'other' }]
+      skills: ['Angular', 'Typescript', 'HTML, CSS', 'Git']
     },
     {
       company: 'Klestrup & Partners', job: 'Developer', timePlace: '2015 - 2016 | Copenhagen',
       description: 'As part of my EUX education, I had a trainee position as a programmer. I worked on small tasks with C#.',
-      skills: [{ skill: 'C#', type: 'language' }, { skill: 'Git', type: 'other' }]
+      skills: ['C#', 'Git']
     },
     {
       company: 'Computer Assistance Ltd', job: 'Helper', timePlace: '2014 | Oxfordshire',
@@ -56,7 +56,7 @@ function App() {
             <p>My journey as a developer spans over the last 9 years, during which I have primarily focused on
               building my skills in frontend development. Through my previous work and personal projects, I have
               gained a strong understanding of Angular, HTML, CSS, JavaScript and TypeScript.</p>
-            <p>I enjoy working on my personal projects but when I'm not coding you'll likely find me hitting the gym or simply chilling out while watching sports. And when the weather's right, I'll be out riding my road bike.</p>
+            <p>I enjoy working on my personal projects, but when I'm not coding you'll likely find me hitting the gym or simply chilling out while watching sports. And when the weather's right, I'll be out riding my road bike.</p>
           </article>
           <Skills />
         </div>
@@ -69,13 +69,13 @@ function App() {
                           The main concept behind this project is to enable to seamlessly navigate through each stage, allowing them to view the key points, stage, winners, and other vital information. 
                           At the end of each stage, there's an overview of the current leaders in categories such as the yellow jersey, green jersey, and more`}
             link={'https://dmsvensson.github.io/grandTours/'}
-            skills={[{ skill: 'React', type: 'framework' }, { skill: 'Javascript', type: 'language' }, { skill: 'HTML, CSS', type: 'language' }]}
+            skills={['react', 'Express','Javascript', 'HTML, CSS', 'Node.js', 'Azure SQL']}
             key={'TDF'} />
           <ProjectCard image={`${publicURL}/images/treeman.png`}
             title={'Træmanden'}
             description={`I have designed and developed a more modern version of Træmanden.dk`}
             link={'https://treeman-644ca.web.app/'}
-            skills={[{ skill: 'Angular', type: 'framework' }, { skill: 'Typescript', type: 'language' }, { skill: 'HTML, CSS', type: 'language' }, { skill: 'Figma', type: 'other' }, { skill: 'Sanity', type: 'other' }]}
+            skills={['Angular',  'Typescript',  'HTML, CSS',  'Figma',  'Sanity']}
             key={'treeman'} />
           <ProjectCard image={`${publicURL}/images/ginWebsite.png`}
             title={'Gin Tasting'}
@@ -83,24 +83,24 @@ function App() {
                           This allowed other students to rate various gins, ultimately determining the best one.
                           To access a specific event, you can use the event code: 7765`}
             link={'https://gin-tasting.web.app/'}
-            skills={[{ skill: 'Angular', type: 'framework' }, { skill: 'Typescript', type: 'language' }, { skill: 'Firebase', type: 'other' }]}
+            skills={['Angular', 'Typescript', 'Firebase']}
             key={'Gin'} />
           <ProjectCard image={`${publicURL}/images/myFitLog.png`}
             title={'MyFitLog'}
             description={`MyFitLog is a website designed for tracking your strength training progress. If you'd like to explore the demo, you can use the following login:`}
             demoUser={{email: 'Email: test@test.com', password: 'Password: Demo$Test1234'}}
-            skills={[{ skill: 'Angular', type: 'framework' }, { skill: 'Typescript', type: 'language' }, { skill: 'HTML, CSS', type: 'language' }, { skill: 'Firebase', type: 'other' }]}
+            skills={['Angular', 'Typescript', 'HTML, CSS', 'Firebase']}
             link={'https://myfitlog-d6729.web.app/home'}
             key={'MyFitLog'} />
           <ProjectCard image={'https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80'}
             title={'Smart Mirror'}
             description={`I created a smart mirror and an app with the purpose of providing my family with valuable, real-time infomation on the smart mirror.`}
-            skills={[{ skill: 'Ionic', type: 'framework' }, { skill: 'Firebase', type: 'other' }]}
+            skills={[ 'Ionic',  'Firebase']}
             key={'smartMirror'} />
           <ProjectCard image={'https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80'}
             title={'TilbudsChecker'}
             description={`One of my earliest projects was an app which allows users to input a product's URL. The app then automatically checks for any discounts on the product once a day, ensuring that you never miss out on a great deal.`}
-            skills={[{ skill: 'C#', type: 'language' }, { skill: 'UWP', type: 'other' }]}
+            skills={[ 'C#',  'UWP']}
             key={'Tilbud'} />
         </div>
       </Container>
@@ -115,7 +115,7 @@ function App() {
                 <p className='space-up'>{experience.description}</p>
                 <div className='skills'>
                   {experience.skills && experience.skills.map(skill => {
-                    return <SkillTag skill={skill.skill} type={skill.type} key={skill.skill} />
+                    return <SkillTag skill={skill} key={skill.skill} />
                   })}
                 </div>
               </div>
@@ -133,7 +133,7 @@ function App() {
               <span className='left education'>Computer Technicain Specializing in Programming, EUX, TEC</span>
             </div>
             <div className='year box'>2020
-              <span className='right education'>Bachelor Degree in IT Product Development, Aarhus University</span>
+              <span className='right education'>Started my Bachelor Degree in IT Product Development, Aarhus University</span>
             </div>
             <div className='semester box'>
               1
