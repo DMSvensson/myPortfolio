@@ -65,19 +65,19 @@
 
 .experiences {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 50px;
+    gap: 50px 0;
 }
 
 .experience {
     width: 30%;
 }
 
-.experience ~ .experience {
+/* .experience ~ .experience {
     margin-left: 30px;
-}
+} */
 
 .experience > .space-down {
     margin-bottom: 15px;
@@ -168,7 +168,7 @@
 
 .education > img {
     width: 18rem;
-    margin-left: 20px;
+    margin: 20px;
     cursor: pointer;
 }
 

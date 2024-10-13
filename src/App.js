@@ -22,6 +22,11 @@ function App() {
   const publicURL = process.env.PUBLIC_URL;
   const experiences = [
     {
+      company: 'Better Collective', job: 'Developer - HLTV & FUTBIN', timePlace: '2024 -  | Aarhus',
+      description: 'I am developer at Better Collective and a part of the esport department. I am currently part of the HLTV team, but I will be joining the FUTBIN team in 2025.',
+      skills: ['Kotlin', 'Javascript', 'Git']
+    },
+    {
       company: 'Syncorder', job: 'Frontend Developer', timePlace: '2018 - 2020 | Copenhagen',
       description: 'My most recent role was as a trainee at Syncorder. I actively participated in the development of the frontend for a platform that our customers used to streamline their procurement processes. This experience allowed me to gain hands-on experience and valuable expertise in frontend development.',
       skills: ['Angular', 'Typescript', 'HTML, CSS', 'Git']
@@ -204,10 +209,14 @@ function App() {
               </ul>
             </div>
             <div className='year box'>2023
-              <span className='left education'>Finished my Bachelor Degree</span>
+              <span className='right education'>Finished my Bachelor Degree</span>
             </div>
             <div className='cert box'>Cert.
-              <span className='right education'>Web Development, Codecademy <img onClick={openModal} src={`${publicURL}/images/WD_Certificate_Codecademy.png`} alt='Certificate'/> </span>
+              <span className='left education'><img onClick={openModal} src={`${publicURL}/images/WD_Certificate_Codecademy.png`} alt='Web Development Certificate'/> Web Development, Codecademy</span>
+            </div>
+            <div className='year box'>2024</div>
+            <div className='cert box'>Cert.
+              <span className='right education'>Front-End Engineer, Codecademy <img onClick={openModal} src={`${publicURL}/images/FE_Certificate_Codecademy.png`} alt='Front-End Engineer Certificate'/></span>
             </div>
           </div>
         </div>

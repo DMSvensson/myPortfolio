@@ -14,7 +14,8 @@ const skills = [
     { skill: 'UWP', type: 'other' },
     { skill: 'Node.js', type: 'other'},
     { skill: 'Express', type: 'framework'},
-    { skill: 'Azure SQL', type: 'other'}
+    { skill: 'Azure SQL', type: 'other'},
+    { skill: 'Kotlin', type: 'language'}
 ];
 
 const allSkills = [
