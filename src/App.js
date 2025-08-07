@@ -22,7 +22,7 @@ function App() {
   const publicURL = process.env.PUBLIC_URL;
   const experiences = [
     {
-      company: 'Better Collective', job: 'Developer - HLTV & FUTBIN', timePlace: '2024 -  | Aarhus',
+      company: 'Better Collective', job: 'Full-Stack Engineer - HLTV & FUTBIN', timePlace: '2024 -  | Aarhus',
       description: 'I am developer at Better Collective and a part of the esport department. I am currently part of the HLTV team, but I will be joining the FUTBIN team in 2025.',
       skills: ['Kotlin', 'Javascript', 'Git']
     },
