@@ -73,7 +73,7 @@ function App() {
             description={`This is one of my most recent projects and it focuses on presenting the historical results of the Tour de France. 
                           The main concept behind this project is to enable to seamlessly navigate through each stage, allowing them to view the key points, stage, winners, and other vital information. 
                           At the end of each stage, there's an overview of the current leaders in categories such as the yellow jersey, green jersey, and more`}
-            link={'https://dmsvensson.github.io/grandTours/'}
+            link={'https://grandpeloton.com/'}
             skills={['react', 'Express','Javascript', 'HTML, CSS', 'Node.js', 'Azure SQL']}
             key={'TDF'} />
           <ProjectCard image={`${publicURL}/images/treeman.png`}
